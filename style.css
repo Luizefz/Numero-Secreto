@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+:root {
+    --font-family: 'Poppins', sans-serif;
+    --bg-color: #678983;
+    --primary-color: #F0E9D2;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    font-family: var(--font-family);
+}
+
+.principal-text {
+    font-size: 3em;
+    font-weight: 800;
+    padding: 10px 0;
+    border-bottom: var(--primary-color) solid thin;
+}
+
+.hint-text {
+    font-size: 2em;
+    font-weight: 600;
+    margin: 4% 0;
+}
+
+.mensagem {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.box {
+    border: var(--primary-color) solid 1.5px;
+    border-radius: 14px;
+    display: inline-block;
+    font-size: 50px;
+    padding: 3%;
+    margin: 5% 0;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+.btn-jogar {
+    padding: 2% 3%;
+    border: 0;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    margin: 10% 0;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+.btn-jogar:hover {
+    background-color: #eed481;
+}
+
+.chuteInvalido {
+    background-color: indianred;
+}
