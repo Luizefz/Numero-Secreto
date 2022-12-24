@@ -19,23 +19,7 @@ function VerificarChuteValido(chute) {
         O número secreto era: <br><br>${numeroSecreto}</h1>
         <button id="jogar-novamente" class="btn-jogar" href="#">Jogar Novamente!</button>  
         `
-    }
-    if (VerificarChuteValido(numero)) {
-        if (chute.toUpperCase() === "GAME OVER") {
-
-            document.body.innerHTML =
-                `
-                <h2>Game Over!!!</h2>
-                <h3>Pressione o botão para jogar novamente</h3>
-                <button id="jogar-novamente" class="btn-jogar" >Jogar novamente</button>
-                `
-            document.body.style.backgroundColor = "black";
-        } else {
-
-            elementoChute.innerHTML += '<div>Valor Inválido</div>';
-        }
-    }
-    else if (numero > numeroSecreto) {
+    } else if (numero > numeroSecreto) {
         elemChute.innerHTML += `
         <div>O número secreto é menor <i class="fa-solid fa-arrow-down-wide-short"></i></div>
         `
