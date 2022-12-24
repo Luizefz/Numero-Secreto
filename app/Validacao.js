@@ -20,7 +20,7 @@ function VerificarChuteValido(chute) {
         <button id="jogar-novamente" class="btn-jogar" href="#">Jogar Novamente!</button>  
         `
     }
-    if (chuteForInvalido(numero)) {
+    if (VerificarChuteValido(numero)) {
         if (chute.toUpperCase() === "GAME OVER") {
 
             document.body.innerHTML =
